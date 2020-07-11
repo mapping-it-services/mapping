@@ -32,6 +32,49 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
+  <style type="text/css">
+        #team .card {
+            border: none;
+            background: #ffffff;
+        }
+        
+        .frontside {
+            position: relative;
+            -webkit-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+        
+        .frontside .card,
+        {
+            min-height: 312px;
+        }
+        
+        .frontside .card .card-title,
+        {
+            color: #d9232d;
+        }
+        
+        .frontside .card .card-body img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        
+        .image-flip {
+            box-shadow: 1px 1px 5px grey;
+        }
+        
+        .card-text-1 {
+            color: red;
+            font-size: 18px;
+        }
+        
+        p {
+            font-size: 14px;
+        }
+    </style>
 
 </head>
 
@@ -54,6 +97,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://forms.gle/vjPNnnBptsCSVrvJ8">Internships</a>
@@ -136,89 +182,175 @@
   
   
   <!-- Portfolio Section -->
-  <section class="team-section text-center my-5" id="portfolio">
-     <div class="container">   
+  <section id="portfolio">
     <h2 class="text-center mt-0">TEAM</h2>
-      <hr class="divider my-4">
+    <hr class="divider my-4">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="card image"></p>
+                                    <h4 class="card-title">CH. ABHINAV CHANDU</h4>
+                                    <p class="card-text-1">Co-Founder & MD</p>
 
-            <div class="row">
 
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/1.jpg" height="290px" width="270px" class="rounded-circle z-depth-1" alt="Sample avatar">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">CH ABHINAV CHANDU</h5>
-                    <p class="text-uppercase blue-text"><strong>MD & CO-Founder</strong></p>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/2.jpg" height="290px" width="270px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">M D N AKASH</h5>
-                    <p class="text-uppercase blue-text"><strong>CEO & CO-Founder</strong></p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/3.jpg" height="290px" width="270px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">S VAMSHI KRISHNA</h5>
-                    <p class="text-uppercase blue-text"><strong>COO & CO-Founder</strong></p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/4.jpg" height="290px" width="270px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">N PUNEETH</h5>
-                    <p class="text-uppercase blue-text"><strong>CTO</strong></p>
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/5.jpg" height="300px" width="270px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">T SREEJA RAO</h5>
-                    <p class="text-uppercase blue-text"><strong>HR MANAGER</strong></p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/6.jpg" height="300px" width="270px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">M SAI PRASHANTH</h5>
-                    <p class="text-uppercase blue-text"><strong>Head of R&D</strong></p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/7.jpg" height="300px" width="325px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">D AJAY</h5>
-                    <p class="text-uppercase blue-text"><strong>DEVELOPER</strong></p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/8.png" height="300px" width="350px" class="rounded-circle z-depth-1" alt="Sample avatar">
-                    </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">V V A TEJESH</h5>
-                    <p class="text-uppercase blue-text"><strong>DEVELOPER</strong></p>
-                </div>
-
             </div>
 
-            <div class="row">
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="avatar mx-auto">
-                        <img src="img/portfolio/thumbnails/9.png" height="300px" width="350px" class="rounded-circle z-depth-1" alt="Sample avatar">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="card image"></p>
+                                    <h4 class="card-title">M.D.N. AKASH</h4>
+                                    <p class="card-text-1">Co-Founder & CEO</p>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">P SATYA HARIKA</h5>
-                    <p class="text-uppercase blue-text"><strong>DEVELOPER</strong></p>
                 </div>
-
             </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="card image"></p>
+                                    <h4 class="card-title">S. VAMSHI KRISHNA</h4>
+                                    <p class="card-text-1">COO</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="card image"></p>
+                                    <h4 class="card-title">N. PUNEETH</h4>
+                                    <p class="card-text-1">CTO</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="card image"></p>
+                                    <h4 class="card-title">T. SREEJA REDDY</h4>
+                                    <p class="card-text-1">HR MANAGER</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="card image"></p>
+                                    <h4 class="card-title">M. SAI PRASHANTH</h4>
+                                    <p class="card-text-1">Head of R&D</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/7.jpg" alt="card image"></p>
+                                    <h4 class="card-title">D. AJAY</h4>
+                                    <p class="card-text-1">DEVELOPER</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/8.png" alt="card image"></p>
+                                    <h4 class="card-title">V. V. A. TEJESH</h4>
+                                    <p class="card-text-1">DEVELOPER</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/portfolio/thumbnails/9.png" alt="card image"></p>
+                                    <h4 class="card-title">P. SATYA HARIKA</h4>
+                                    <p class="card-text-1">DEVELOPER</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
-    </section>
+  </section>
   
   <!-- Contact Section -->
   <section class="page-section" id="contact">
